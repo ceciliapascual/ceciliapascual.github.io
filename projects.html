@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html>
+
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<!-- code for fonts for page -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<!-- end of code for fonts for page -->
+
+<style>
+
+	/*class of container code:*/
+	.container{
+		width:100%;
+		height:400px;
+		display:inline-block;
+	}
+	/*end of class of container code*/
+
+/*class of photo code:*/
+		.photo{
+		width:400px;
+		height:400px;
+		background-image:cover;
+		background-position:center;
+		border:3px solid whitesmoke;
+		display:inline-block;
+		}
+	/*end of class of photo code:*/
+
+	/*jewelry collection code:*/
+			#pearls{
+				background-image:url(jewelry.jpg
+				);
+				display:inline-block;
+				position:relative;
+				left:2.5%;
+				top:10%;
+			}
+		/*end of jewelry collection code*/
+
+		/*fall fit photo code*/
+			#fallfitphoto{
+				background-image:url(fallfitphoto.jpg);
+				display:inline-block;
+				position:relative;
+				left:7%;
+				top:10%;
+			}
+		/*end of fall fit photo code*/
+
+		/*emily code*/
+		#emilyengphoto{
+				background-image:url(emilyeng.jpg);
+				display:inline-block;
+				position:relative;
+				left:10.5%;
+				top:10%;
+			}
+		/*end of emily code*/
+
+		/*nyc code*/
+		#nyc{
+			background-image:url(nyc.jpg);
+			display:inline-block;
+			position:relative;
+			left:2.5%;
+			top:20%;
+		}
+
+		/*end of nyc code*/
+
+		/*animation code*/
+		#animation{
+			background-image:url(star-gif.gif);
+			background-color:gainsboro;
+			top:20%;
+			left:7%;
+			position:relative;
+			display:inline-block;
+
+		}
+		/*end of animation code*/
+/*end of collections code*/
+</style>
+
 </head>
 <body>
 
+
+<!-- Collection Divs -->
+<div id = "collections">
+
+	<!-- jewelry collection code: -->
+
+		<!-- container code: -->
+			<div class="container">
+
+
+			<!-- jewelry link code: -->
+				<a id="jewelrylink" href="jewelry.html">
+					<!-- pearls photo code: -->
+				<div id = "pearls" class="photo">
+				</div>
+				</a>
+			<!-- end of jewelry link code: -->
+			
+			<!-- fall fits -->
+			<a id="fallfits" href="fallfits.html">
+					<div id="fallfitphoto" class="photo"></div>	
+				</a>
+			<!-- end of fall fits -->
+
+			<!-- emily code: -->
+			<a id="emily" href="emily.html">
+				<div id="emilyengphoto" class="photo"></div>
+				</a>	
+			<!-- end of emily code -->
+
+			<!--nyc code-->
+			<a id="nyclink" href="nyc.html">
+				<div id="nyc" class="photo"></div>
+			</a>
+			<!-- end of nyc code -->
+
+			<!-- animation code -->
+			<a id="animationlink" href="animation.html">
+				<div id="animation" class="photo"></div>
+			</a>
+			<!-- end of animation code -->
+		<!-- end of container code -->
+
+	</div>
+<!-- End of collections div -->
+	
 </body>
 </html>
