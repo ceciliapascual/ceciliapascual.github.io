@@ -1,11 +1,252 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+		#background{
+			background-color:gainsboro;
+			height:765px;
+			width:100%;
+			}
+		#star{
+
+			left:2%;
+			top:3%;
+			height:720px;
+			width:96%;
+			position:relative;
+			background-image:url(stars.jpg);
+			background-size:contain;
+		
+		}
+
+		#ufo{
+			top:50%;
+			left:110%;
+			width:100px;
+			height:100px;
+			background-image:url(ufo.png);
+			animation-name:aboutmedance;
+			animation-duration:8s;
+			position:absolute;
+			background-size:contain;
+			background-repeat:no-repeat;
+			animation-iteration-count:1;
+		
+		}
+
+		@keyframes aboutmedance{
+
+
+			0%{
+			 top:50%;
+			 left:0%;
+			 }
+
+			16%{
+			top:30%;
+			left:14%;
+			}
+
+			32%{
+			top:50%;
+			left:30%;
+			}
+
+			48%{
+			top:30%;
+			left:46%;
+			}
+
+			64%{
+			top:50%;
+			left:62%;
+			}
+
+			80%{
+			top:30%;
+			left:78%;
+			}
+
+			99%{
+			top:50%;
+			left:94%;
+			}
+
+			100%{
+			top:50%;
+			left:15000000000000%;
+			
+			}
+
+		
+
+		}
+
+		.name{
+			font-size:100px;
+			color:white;
+			animation-name:appear;
+			animation-duration:1s;
+			animation-iteration-count: 1;
+			opacity:0;
+
+		}
+
+		
+
+		#A{
+			animation-delay:0s;
+			animation-name:appear;
+			position:relative;
+			top:50%;
+			left:0%;
+			animation-fill-mode:forwards;
+			
+
+		}
+
+		#B{
+			animation-delay:1.3s;
+			animation-name:appear;
+			position:relative;
+			top:10%;
+			left:18%;
+			animation-fill-mode:forwards;
+
+			
+		}
+
+		#O{
+			animation-delay:2.6s;
+			animation-name:appear;
+			position:relative;
+			top:19%;
+			left:32%;
+			animation-fill-mode:forwards;
+			
+		}
+
+		#U{
+			animation-delay:3.7s;
+			animation-name:appear;
+			position:relative;
+			top:-22%;
+			left:45%;
+			animation-fill-mode:forwards;
+			
+		}
+
+		#T{
+			animation-delay:5s;
+			animation-name:appear;
+			position:relative;
+			top:-13%;
+			left:62%;
+			animation-fill-mode:forwards;
+		
+		}
+
+		#M{
+			animation-delay:6.3s;
+			animation-name:appear;
+			position:relative;
+			top:-54%;
+			left:79%;
+			animation-fill-mode:forwards;
+			
+		}
+
+		#E{
+			animation-delay:7.5s;
+			animation-name:appear;
+			position:relative;
+			top:-45%;
+			left:95%;
+			animation-fill-mode:forwards;
+			
+		}
+
+		#am{
+			width:90%;
+			height:30px;
+			background-color:black;
+			border:3px gainsboro;
+		}
+		#aboutme{
+			color:ghostwhite;
+			position:relative;
+			text-align:center;
+			font-family: 'Abhaya Libre', serif;
+			font-size:18px;
+			animation-delay:8s;
+			animation-name:appear;
+			animation-fill-mode:forwards;
+		}
+
+		@keyframes appear{
+			0%{
+				opacity:0;
+			}
+
+			100%{
+				opacity:1;
+			}
+		}
+
+		#moon{
+			background-image:url(moon.gif);
+			width:100px;
+			height:100px;
+			top:0%;
+			background-size:contain;
+			position:absolute;
+		}
+
+
+
+		
+
+
+	</style>
 </head>
 <body>
+
+
+	<div id="background">
+		<div id="star">
+			<div id="ufo"></div>
+
+			<div id="A" class="name">A</div>
+			<div id="B" class="name">B</div>
+			<div id="O" class="name">O</div>
+			<div id="U" class="name">U</div>
+			<div id="T" class="name">T</div>
+			<div id="M" class="name">M</div>
+			<div id="E" class="name">E</div>
+			<div id="am">
+			<div id="aboutme">
+				<p id="aboutme">Hello, this is Cecilia Pascual, creator of this website.</p>
+				<p id="aboutme">The inspo for this website was kinda just what i find aesthetically pleasing.</p>
+				<p id="aboutme">Mostly making mood boards and stuff like that cus I think its cute.</p> 
+				<p id="aboutme">So right now thats like cute stars and moons and aesthetic outfits or photos <3333</p>
+			</div>
+			</div>
+
+			<div id="moon"></div>
+		</div>
+	</div>
+	
+
+	
+
+
 
 </body>
 </html>
