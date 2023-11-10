@@ -1,158 +1,80 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
-	<!-- code for fonts for page -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-<!-- end of code for fonts for page -->
-
-<style>
-
-	/*class of container code:*/
-	.container{
-		width:100%;
-		height:400px;
-		display:inline-block;
-	}
-	/*end of class of container code*/
-
-/*class of photo code:*/
-		.photo{
-		width:400px;
-		height:400px;
-		background-image:cover;
-		background-position:center;
-		border:3px solid whitesmoke;
-		display:inline-block;
-		}
-	/*end of class of photo code:*/
-
-	/*jewelry collection code:*/
-			#pearls{
-				background-image:url(jewelry.jpg
-				);
-				display:inline-block;
-				position:relative;
-				left:2.5%;
-				top:10%;
-			}
-		/*end of jewelry collection code*/
-
-		/*fall fit photo code*/
-			#fallfitphoto{
-				background-image:url(fallfitphoto.jpg);
-				display:inline-block;
-				position:relative;
-				left:7%;
-				top:10%;
-			}
-		/*end of fall fit photo code*/
-
-		/*emily code*/
-		#emilyengphoto{
-				background-image:url(emilyeng.jpg);
-				display:inline-block;
-				position:relative;
-				left:10.5%;
-				top:10%;
-			}
-		/*end of emily code*/
-
-		/*nyc code*/
-		#nyc{
-			background-image:url(nyc.jpg);
-			display:inline-block;
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		#scrapbook{
+			width:800px;
+			height:800px;
+			left:20%;
+			background-size:contain;
 			position:relative;
-			left:2.5%;
-			top:10%;
-			
 		}
 
-		/*end of nyc code*/
-
-		/*animation code*/
-		#animation{
-			background-image:url(star-gif.gif);
+		#background{
 			background-color:gainsboro;
-			left:7%;
-			top:10%;
-			position:relative;
-			display:inline-block;
-
+			width:100%;
+			height:765px;
 		}
-		/*end of animation code*/
 
-		/*event code*/
-		#eventlistener{
-			background-image:url(back.jpg);
-			background-color:gainsboro;
-			left:10.5%;
-			top:10%;
+
+
+		#cover{
 			position:relative;
-			display:inline-block;
-
+			top:12.5%;
+			left:28%;
+			width:385px;
+			height:577px;
+			background-image:url(cover.png);
+			background-size:contain;
 		}
-		/*end of event code*/
-/*end of collections code*/
-</style>
 
+		#spine{
+			position:relative;
+			top:-59.5%;
+			left:27%;
+			width:10px;
+			height:577px;
+			background-size:contain;
+			background-image:url(spine.png);
+		}
+
+		#arrow{
+			background-image:url(arrow.png);
+			background-size:contain;
+			width:89px;
+			height:50px;
+			left:70%;
+			top:-55%;
+			position:relative;
+		}
+
+		#l{
+			width:89px;
+			height:50px;
+			left:70%;
+			top:-55%;
+			position:relative;
+		}
+	</style>
 </head>
 <body>
 
-
-<!-- Collection Divs -->
-<div id = "collections">
-
-	<!-- jewelry collection code: -->
-
-		<!-- container code: -->
-			<div class="container">
-
-
-			<!-- jewelry link code: -->
-				<a id="jewelrylink" href="jewelry.html">
-					<!-- pearls photo code: -->
-				<div id = "pearls" class="photo">
-				</div>
-				</a>
-			<!-- end of jewelry link code: -->
-			
-			<!-- fall fits -->
-			<a id="fallfits" href="fallfits.html">
-					<div id="fallfitphoto" class="photo"></div>	
-				</a>
-			<!-- end of fall fits -->
-
-			<!-- emily code: -->
-			<a id="emily" href="emily.html">
-				<div id="emilyengphoto" class="photo"></div>
-				</a>	
-			<!-- end of emily code -->
-
-			<!--nyc code-->
-			<a id="nyclink" href="nyc.html">
-				<div id="nyc" class="photo"></div>
-			</a>
-			<!-- end of nyc code -->
-
-			<!-- animation code -->
-			<a id="animationlink" href="animation.html">
-				<div id="animation" class="photo"></div>
-			</a>
-			<!-- end of animation code -->
-
-			<!-- eventlistener code -->
-			<a id="event" href="eventlistener.html">
-				<div id="eventlistener" class="photo"></div>
-			</a>
-			<!-- end of eventlistener code -->
-		<!-- end of container code -->
-
+	<div id="background">
+		<div id="scrapbook">
+			<div id="cover"></div>
+			<div id="spine"></div>
+		</div>
+		<div id="arrow"></div>
+		<a href="projectspone.html" id="l"></a>
 	</div>
-<!-- End of collections div -->
 	
+	
+	
+
+
 </body>
 </html>
