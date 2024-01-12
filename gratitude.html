@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+	<style type="text/css">
+		
+		.photo{
+			display:inline-block;
+			border:3px solid white;
+			background-size:contain;
+			position:relative;
+			top:5px;
+			left:45px;
+		}
+
+		#one{
+			background-image:url(freyaone.jpg);
+			width:195px;
+			height:260px;
+			opacity:0;
+
+		}
+
+		#onec{
+			width:195px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:13px;
+			left:53px;
+			opacity:1;
+
+		}
+
+		#two{
+			background-image:url(freyatwo.jpg);
+			width:347px;
+			height:260px;
+			opacity:0;
+
+		}
+
+		#twoc{
+			width:347px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:13px;
+			left:258px;
+			opacity:0;
+
+		}
+
+		#three{
+			background-image:url(freyathree.jpg);
+			width:195px;
+			height:260px;
+			opacity:0;
+
+		}
+
+		#threec{
+			width:195px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:13px;
+			left:615px;
+			opacity:0;
+
+		}
+
+		#four{
+			background-image:url(freyafour.jpg);
+			width:145px;
+			height:260px;
+			opacity:0;
+
+		}
+
+		#fourc{
+			width:145px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:13px;
+			left:820px;
+			opacity:0;
+
+		}
+
+		#five{
+			background-image:url(freyafive.jpg);
+			width:195px;
+			height:260px;
+			opacity:0;
+
+		}
+
+		#fivec{
+			width:195px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:13px;
+			left:975px;
+			opacity:0;
+
+		}
+
+		#six{
+			background-image:url(freyasix.jpg);
+			width:195px;
+			height:260px;
+			opacity:0;
+
+		}
+
+		#sixc{
+			width:195px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:13px;
+			left:1180px;
+			opacity:0;
+
+		}
+
+
+		#seven{
+			background-image:url(freyaseven.jpg);
+			width:195px;
+			height:260px;
+			top:29%;
+			opacity:0;
+
+		}
+
+		#sevenc{
+			width:195px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:63.8%;
+			left:53px;
+			opacity:0;
+
+		}
+
+		#eight{
+			background-image:url(freyaeight.jpg);
+			width:195px;
+			height:260px;
+			top:29%;
+			opacity:0;
+		
+
+		}
+
+
+		#eightc{
+			width:195px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:63.8%;
+			left:258px;
+			opacity:0;
+
+		}
+
+		#nine{
+			background-image:url(freyanine.jpg);
+			width:142px;
+			height:260px;
+			top:29%;
+			opacity:0;
+		
+
+		}
+
+		#ninec{
+			width:142px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:63.8%;
+			left:463px;
+			opacity:0;
+		
+
+
+		}
+
+		#ten{
+			background-image:url(freyaten.jpg);
+			width:346px;
+			height:260px;
+			top:29%;
+			opacity:0;s
+
+	
+		}
+
+
+		#tenc{
+			width:346px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:63.8%;
+			left:615px;
+			opacity:0;
+
+		}
+
+		#eleven{
+			background-image:url(freyaeleven.jpg);
+			width:195px;
+			height:260px;
+			top:29%;
+			opacity:0;
+			
+		}
+
+		#elevenc{
+			width:195px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:63.8%;
+			left:970px;
+			opacity:0;
+			
+		}
+
+		#twelve{
+			background-image:url(freyatwelve.jpg);
+			width:195px;
+			height:260px;
+			top:29%;
+			opacity:0;
+			
+	
+
+		}
+
+		#twelvec{
+			width:195px;
+			height:260px;
+			font-size:10px;
+			text-align:center;
+			color:black;
+			border:3px solid black;
+			position:absolute;
+			top:63.8%;
+			left:1175px;
+			opacity:0;
+		
+		}
+
+
+		#background{
+			background-color:gainsboro;
+			width:100%;
+			height:765px;
+		}
+
+		.click{
+			display:inline-block;
+		}
+
+		#freya{
+			text-decoration: none;
+			color:white;
+			font-size:50px;
+			text-align:center;
+			postion:absolute;
+			background-color:gainsboro;
+			top:-30%;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div id="background">
+	<div id="one" class="photo"></div>
+	<div id="two" class="photo"></div>
+	<div id="three" class="photo"></div>
+	<div id="four" class="photo"></div>
+	<div id="five" class="photo"></div>
+	<div id="six" class="photo"></div>
+	<div id="seven" class="photo"></div>
+	<div id="eight" class="photo"></div>
+	<div id="nine" class="photo"></div>
+	<div id="ten" class="photo"></div>
+	<div id="eleven" class="photo"></div>
+	<div id="twelve" class="photo"></div>
+	<div id="onec" class="click">♡click♡</div>
+	<div id="twoc" class="click">♡click♡</div>
+	<div id="threec" class="click">♡click♡</div>
+	<div id="fourc" class="click">♡click♡</div>
+	<div id="fivec" class="click">♡click♡</div>
+	<div id="sixc" class="click">♡click♡</div>
+	<div id="sevenc" class="click">♡click♡</div>
+	<div id="eightc" class="click">♡click♡</div>
+	<div id="ninec" class="click">♡click♡</div>
+	<div id="tenc" class="click">♡click♡</div>
+	<div id="elevenc" class="click">♡click♡</div>
+	<div id="twelvec" class="click">♡click♡</div>
+	<div id="freya">Love You Freya <3</div>
+	</div>
+
+	<script type="text/javascript">
+		
+		onec.addEventListener("click", function(){
+			
+
+			one.style.opacity="1"
+			onec.style.opacity="0"
+			twoc.style.opacity="1"
+
+			})
+
+		twoc.addEventListener("click", function(){
+			
+
+			two.style.opacity="1"
+			twoc.style.opacity="0"
+			threec.style.opacity="1"
+
+			})
+
+		threec.addEventListener("click", function(){
+			
+
+			three.style.opacity="1"
+			threec.style.opacity="0"
+			fourc.style.opacity="1"
+
+			})
+
+		fourc.addEventListener("click", function(){
+			
+
+			four.style.opacity="1"
+			fourc.style.opacity="0"
+			fivec.style.opacity="1"
+
+			})
+
+		fivec.addEventListener("click", function(){
+			
+
+			five.style.opacity="1"
+			fivec.style.opacity="0"
+			sixc.style.opacity="1"
+
+			})
+
+		sixc.addEventListener("click", function(){
+			
+
+			six.style.opacity="1"
+			sixc.style.opacity="0"
+			sevenc.style.opacity="1"
+
+			})
+
+		sevenc.addEventListener("click", function(){
+			
+
+			seven.style.opacity="1"
+			sevenc.style.opacity="0"
+			eightc.style.opacity="1"
+
+			})
+
+		eightc.addEventListener("click", function(){
+			
+
+			eight.style.opacity="1"
+			eightc.style.opacity="0"
+			ninec.style.opacity="1"
+
+			})
+
+		ninec.addEventListener("click", function(){
+			
+
+			nine.style.opacity="1"
+			ninec.style.opacity="0"
+			tenc.style.opacity="1"
+
+			})
+
+		tenc.addEventListener("click", function(){
+			
+
+			ten.style.opacity="1"
+			tenc.style.opacity="0"
+			elevenc.style.opacity="1"
+
+			})
+
+		elevenc.addEventListener("click", function(){
+			
+
+			eleven.style.opacity="1"
+			elevenc.style.opacity="0"
+			twelvec.style.opacity="1"
+
+			})
+
+		twelvec.addEventListener("click", function(){
+			
+
+			twelve.style.opacity="1"
+			twelvec.style.opacity="0"
+		
+
+			})
+
+	</script>
+</body>
+</html>

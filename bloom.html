@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script type="text/javascript">
+
+function makeBloom (){
+var cookie = document.createElement("div");
+document.body.appendChild(cookie);
+cookie.style.backgroundImage="url(whiteflowerbud.png)";
+cookie.style.width = "200px";
+cookie.style.height = "200px";
+cookie.style.display = "inline-block";
+cookie.style.backgroundSize = "contain";
+cookie.style.backgroundRepeat = "no-repeat";
+
+cookie.addEventListener("mouseenter", function(){
+
+cookie.style.backgroundImage="url(whiteflower.png)";
+cookie.style.width = "200px";
+cookie.style.height = "200px";
+cookie.style.display = "inline-block";
+cookie.style.backgroundSize = "contain";
+cookie.style.backgroundRepeat = "no-repeat";
+})
+}
+setInterval(makeBloom, 700);
+</script>
+
+</body>
+</html>
