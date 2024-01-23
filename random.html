@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#file{
+			position:absolute;
+			left:38%;
+			top:60%;
+		}
+
+		#club{
+			background-image:url(club.png);
+			height:765px;
+			width:95%;
+			left:2.5%;
+			position:absolute;
+			background-size: contain;
+			}
+
+		#dwoman{
+			background-image:url(dwoman.gif);
+			height:100px;
+			width:100%;
+			position:relative;
+			background-size: contain;
+			}
+		
+
+		#drake{
+			background-image:url(drake.gif);
+			height:100px;
+			width:100%;
+			position:relative;
+			background-size:contain;
+			}
+
+		#dclub{
+			background-image:url(dclub.gif);
+			height:100px;
+			width:100%;
+			position:relative;
+			background-size:contain;
+			}
+
+		#mario{
+			background-image:url(mario.gif);
+			height:100px;
+			width:100%;
+			position:relative;
+			background-size:contain;
+			}
+
+		#dance{
+			background-image:url(dance.png);
+			height:200px;
+			width:785px;
+			position:absolute;
+			background-size:contain;
+			left:21%;
+			top:75%;
+			}
+		
+	</style>
+</head>
+<body>
+	
+	<div id="club">
+		<div id="dance"></div>
+		<audio id = "file" controls ></audio>
+		<div id="dwoman"></div>
+		<div id="drake"></div>
+		<div id="dclub"></div>
+		<div id="mario"></div>
+	</div>
+
+<script type="text/javascript">
+
+
+	var songs = ["blow.mp3", "bestsongever.mp3", "givemeeverything.mp3", "coolerthanme.mp3", "djgotusfallinginlove.mp3", "dontstopthemusic.mp3"]
+	var x = Math.round(Math.random()*5)
+
+	file.src=songs[x]
+</script>
+
+</body>
+</html>
