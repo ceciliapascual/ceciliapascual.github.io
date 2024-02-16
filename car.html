@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		#car{
+			height:300px;
+			width:300px;
+			position:absolute;
+			left:0px;
+			top:0px;
+			background-image:url(car.png);
+			background-repeat:no-repeat;
+			background-size:contain;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="car"></div>
+	<script type="text/javascript">
+		var x = 0
+		var y = 0
+		document.addEventListener("keydown", function(event){
+			console.log(event.code)
+			if(event.code == "ArrowRight")
+				{x=x+20
+				car.style.left = x + "px"}
+			if(event.code == "ArrowLeft")
+				{x=x-20
+				car.style.left = x + "px"}
+			if(event.code == "ArrowDown")
+				{y=y+20
+				car.style.top = y + "px"}
+			if(event.code == "ArrowUp")
+				{y=y-20
+				car.style.top = y + "px"}
+
+		})
+	</script>
+
+</body>
+</html>
