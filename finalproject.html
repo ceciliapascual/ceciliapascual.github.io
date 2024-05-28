@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Jersey+10&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+		body{
+			margin:0px;
+		}
+
+		#background{
+			height:830px;
+			width:100%;
+			background-image:url(corkboard.jpg);
+			background-size:contain;
+		}
+
+		#jenshot{
+			background-image:url(jenpoli.png);
+			height:150px;
+			width:150px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			border:3px solid whitesmoke;
+			left:5%;
+			top:280px;
+			position:relative;
+		}
+
+		#henshot{
+			background-color:black;
+			height:150px;
+			width:150px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			border:3px solid black;
+			left:30%;
+			top:280px;
+			position:absolute;
+		}
+
+		#sebshot{
+			background-color:black;
+			height:150px;
+			width:150px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			border:3px solid black;
+			left:65%;
+			top:80px;
+			position:absolute;
+		}
+
+
+		#sticky{
+			background-image:url(sticky.png);
+			height:350px;
+			width:350px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			left:0%;
+			top:260px;
+			position:relative;
+			opacity:0;
+		}
+
+		#redone{
+			background-image:url(red.png);
+			height:190px;
+			width:100px;
+			background-size:contain;
+			left:17%;
+			top:133px;
+			position:absolute;
+			rotate:45deg;
+	
+		}
+
+		#redtwo{
+			background-image:url(red.png);
+			height:130px;
+			width:100px;
+			background-size:contain;
+			left:33%;
+			top:133px;
+			position:absolute;
+			rotate:100deg;
+	
+		}
+
+	#redthree{
+			background-image:url(red.png);
+			height:210px;
+			width:100px;
+			background-size:contain;
+			left:20%;
+			top:300px;
+			position:absolute;
+			rotate:90deg;
+	
+		}
+
+		#redfour{
+			background-image:url(red.png);
+			height:250px;
+			width:100px;
+			background-size:contain;
+			left:54%;
+			top:100px;
+			position:absolute;
+			rotate:85deg;
+	
+		}
+
+		#redfive{
+			background-image:url(red.png);
+			height:160px;
+			width:100px;
+			background-size:contain;
+			left:62%;
+			top:200px;
+			position:absolute;
+			rotate:40deg;
+	
+		}
+
+
+		#apt{
+			background-color:black;
+			height:150px;
+			width:112px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			left:24%;
+			top:-420px;
+			position:relative;
+			border:3px solid black;
+		}
+
+		#archives{
+			background-color:black;
+			height:200px;
+			width:135px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			left:40%;
+			top:-550px;
+			position:relative;
+			border:3px solid black;
+		}
+
+		#warehouse{
+			background-color:black;
+			height:175px;
+			width:135px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			border:3px solid black;
+			left:55%;
+			top:-550px;
+			position:relative;
+		}
+
+
+		#tracker{
+			height:470px;
+			width:450px;
+			background-color:black;
+			position:absolute;
+			top:290px;
+			left:67%;
+			border:3px solid gainsboro;
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+
+		#line{
+			height:40px;
+			width:450px;
+			background-color:gainsboro;
+
+		}
+
+		.title{
+  			font-family: "Jersey 10", sans-serif;
+ 			 font-weight: 400;
+ 			 font-style: normal;
+ 			 font-size:30px;
+			text-align:center;
+			color:grey;
+		}
+
+		#audio{
+			left:78%;
+			top:-860px;
+			position:relative;
+		}
+
+		#guessbox{
+			position:absolute;
+			height:300px;
+			width:600px;
+			background-color:black;
+			left:10%;
+			top:480px;
+			border:3px solid gainsboro;
+			
+		}
+
+		#linetwo{
+			height:40px;
+			width:600px;
+			background-color:gainsboro;
+
+		}
+
+		#linethree{
+			height:80px;
+			width:600px;
+			background-color:gainsboro;
+			top:75px;
+			position:relative;
+
+		}
+
+.text{
+	height:420px;
+	width:430px;
+	position:relative;
+	top:30%;
+	left:2.5%;
+	color:greenyellow;
+	overflow-wrap:anywhere;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.guesser{
+	height:40px;
+	width:130px;
+	position:relative;
+	top:25%;
+	left:2.5%;
+	color:greenyellow;
+	overflow-wrap:anywhere;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	font-size:30px;
+	display:inline-block;
+	text-align:center;
+	border:5px solid black;
+}
+
+#guesses{
+	top:55px;
+	position:relative;
+	
+}
+
+#button{
+	border:3px solid grey;
+	text-align:center;
+	width:100px;
+	color:grey;
+	position:absolute;
+	top:20px;
+	left:41%;
+}
+
+	</style>
+</head>
+<body>
+<div id="background">
+	<div id="jenshot"></div>
+	<div id="henshot"></div>
+	<div id="sebshot"></div>
+	<div id="sticky"></div>
+	<div id="apt"></div>
+	<div id="archives"></div>
+	<div id="warehouse"></div>
+	<div id="johnnyshot"></div>
+	<div id="redone"></div>
+	<div id="redtwo"></div>
+	<div id="redthree"></div>
+	<div id="redfour"></div>
+	<div id="redfive"></div>
+	<div id="redsix"></div>
+	<div id="up"></div>
+	<div id="tracker">
+		<div id="line">
+			<div class="title">Crime Tracker 2000</div>
+					<div class="text" id="text">Click an image to begin</div>
+		</div>
+	</div>
+	<audio id="audio" src="pinkPanther.mp3" controls></audio>
+	<div id="guessbox">
+		<div id="linetwo">
+				<div class="title">Who did it?</div>
+		</div>
+		<div id="guesses">
+		<div class="guesser" id="jenny">Jenny</div>
+		<div class="guesser" id="molly">Molly</div>
+		<div class="guesser" id="henry">Henry</div>
+		<div class="guesser" id="sebastian">Sebastian</div>
+		<div class="guesser" id="spacer"></div>
+		<div class="guesser" id="johnny">Johnny</div>
+		<div class="guesser" id="nathan">Nathan</div>
+		</div>
+			<div id="linethree">
+				<div id="button">Guess</div>
+			</div>
+	</div>
+	
+	
+</div>
+
+<script type="text/javascript">
+
+	var x = "nothing"
+	var y = "not yet"
+	jenshot.addEventListener("click", function(){
+
+		text.innerText="'Thank god you're finally here.' Sergeant Jenny tells me as I walk into the alley behind the police station. Jenny and I have been friends since cop school, of course that was before I decided to retire and become a P.I., a pretty fucking good one too.'I thought you might not get my message' she says as I approach. 'I got it, took me a while to get all the way downtown but I got it.' I reply. Around 2 hours earlier I had walked into my office ready to relax only to be met with a letter adressed to you from Jenny saying she needed my help. Why she didn't just text you was anyone's guess. 'You remember that guy who went to get drinks with us around a year ago, Detective Balboni?' she asked. 'Yeah, think so.' 'He's dead, found his body in his own apartment 3 days ago.' 'Shit, what happened?' 'Don't know, Captain says he's had some trouble lately, made a lot of enemies while undercover. He won't let anything else slip though. I know there has to be more. People don't just get killed like that for nothing. It doesn't happen. I need someone outside all this mess to try to find out. I'm under too close supervision. Captain told me not to dig. But if a P.I. I dunno maybe hired by his family came around asking questions...' Jenny had done a lot for me since school, I owed her. 'Yeah, I'll do it. Can you get me to the crime scene?' 'Yeah, I can. Might wanna ask the Captain some questions too, doubt it will be usefull but who knows.'"
+	})
+
+	henshot.addEventListener("click", function(){
+
+		text.innerText="I walk into the 10th precinct police station uneasy. Last time I had been in one of these was years ago. Not fond memories. Jenny and I had timed to enterance to divert suspicion so that by the time I walked in she had already been sitting at her desk for a solid 10 minutes. I walked up to her. '_______, P.I., can I ask the captain some questions about a recent case?' 'Yeah, I can do that. Let me go get him.' she winks at meas she gets up and walks to the Captain's office. A few moments later the door opens again and she signals for me to come inside. I sit down at the seat across from the Captain and Jenny leaves the room. 'Captain Treen.' he says 'Sergeant Wang tells me you have questions. You have 10 minutes.' 'I'll make it quick. I'm a P.I. hired by the Balboni family. They want me to investigate the death of their son. Heard you were the man in charge around here. I've also heard talk that he was on an undercover case for a few months. Can you tell me anything about that?' 'Cases like the one Detective Balboni was on are condifendtial. I'm afraid I can't reveal anything about the nature of what he was doing. A P.I. isn't gonna be much help on this case anyways. We've already looked. There is nothing. It... was a clean job.' He looks down as he says the last sentence; at first I thought he was hiding something but as he looks up I realize he was crying. 'You should go.' As I stand up to leave I hear him mutter something under his breath. 'You should have taken the fucking protection I offered. You were a god damn idiot Nathan.' Out of the corner of my eye I see a piece of paper, a map. A red circle is drawn around what looks like one of the piers in Chelsea, next to it two things: a symbol, a cursive C in an ace and the words last seen. I'll have to check that out later. As I walk out of the station I look back at Jenny and shake my head slightly. Doesn't look like that meeting proved fruitfull. Well apart from one thing, Captain Treen had known something was going to happen to Nathan Balboni, he had tried to stop it. Something happened during that undercover time that put him right at the top of someone's hitlist."
+	})
+
+	sebshot.addEventListener("click", function(){
+
+		text.innerText="I walked into the jail; it was as dingy as depressing as ever. I told them I was related to Peláez-Snyder and I wanted to check in on him and they obliged. I wasn't quite sure what I was expecting but from the outside the criminal certainly looked the part. His entire body was covered in tattoos and I could see holes peppered across his face where piercings that were probably removed once he arrived at jail were. When sat down infront of the glass he looked I saw his eyes widen and he began muttering to himself. At first I couldn't make out what he was saying but if I listened carefully I could catch bits and pieces of it. 'Fuck you Alpine. I never should have trusted you. Shit shit shit. I hope Strike Out shot a bullet into your skull like I told him. I god damn fucking bullet right in the center. I hope it hurt like shit. Like shit. Fuck you Alpine. I never should have trusted you. Shit shit shit. I hope Strike Out shot a bullet into your skull like I told him. I god damn fucking bullet right in the center. I hope it hurt like shit. Like shit.' After maybe three minutes of repeating the same mantra he screeched and started banging his fist against his head. I jumped back in suprise, nearly falling out of the prison's plastic chair. Two gaurds appeared behind him and grabbed him by the arms. One of the gaurds shot me a pitiful look. 'Same thing happened when his brother visited. Hasn't been getting any better, 've been trying to get him a psychatrist but in a place like this and with the things they think he's done... hope he didn't scare ya too bad Mrs./Mr. Peláez-Snyder.' So someone had visited him before... someone fairly recently. Could this be connected to Balboni's death?"
+	})
+
+	johnnyshot.addEventListener("click", function(){
+
+		console.log("johnnyshot")
+	})
+
+	apt.addEventListener("click", function(){
+
+		text.innerText="'And here we are' Jenny said as we arrive in front of a door on the second floor of an apartment building. 'Nathan's apartment' 'Not too shabby, especially for a detective who has been working undercover for a hot second. You'd think he would have moved to a smaller place to cut costs.' 'Think he lived here for a while, maybe he didn't want to give it up.. wasn't planning on getting killed.' Jenny takes a key out her pocket; where she got a key for Nathan's apartment is a mystery for another day. I step into the flat, its a good size for New York, a small kitchen but a big living room. Guess he wasn't much of a chef. Jenny points out where the body was, near a set of arm chairs. Upon closer inspection it looks like the chair was moved recently. Indents from where the legs used to be are still in the carpet nearby. Moving the arm chair back to its original spot reveals something on the floor. Is that blood? I take a photo for later. It looks like two letters, S and O. Did Nathan write those? Did the killer leave it behind? Either way it has to be important. I search the rest of the apartment, but I didn't find much. Actually it was suprisingly boring; he had very little clothing in his closet, few decorations in his bedroom, and even the kitchen cabinets were almost empty. Had he sold things before he left originally? The drawer in his office contained the only other item of relevance. A single pin, an ace with cursive c in it. I remember that symbol but from where... from the map in Captain Treen's office. I stash it in my pocket; even if it doesn't prove to be usefull it could reveal something about what Nathan was up to in that days leading up to his death. Anything could help crack this case. 'Ever seen this before?' I asked Jenny. 'No, never... though...' she trailed off, what did she know? 'What is it? What does the pin mean?''I've seen pins like this one used before, gang affiliations. Nathan wasn't in a gang though. I know him. He wouldn't-' 'You may still be right, there is no reason it was his. Maybe its evidence he accidentally took home. No way to find out unless we investigate.' 'I should probably get back to work soon. You keep working. Update me if you find anything out."
+	})
+
+	warehouse.addEventListener("click", function(){
+
+		text.innerText="I walk into the abandoned building with Jenny. I wouldn't want to get caught in a place like this alone plus the police caution tape outside would atleast give us an alibi if anyone thought we were being suspicious. If my memory served me right this is the location the red circle of Treen's map was refering to. I couldn't find much about the place in the press but if what Treen had said about Balboni's latest activities was true it probably wasn't something that could be disclosed to the public. The first part of the building was completely empty. Just a long room with concreate pillars lining the sides. At the end though, I see a door. I try to walk without making any noise. I finally arrive at the door and grab the knob. Slowly I turn it and open the door. Immeditaley my eyes are drawn to a man in the corner with a crowbar, he looks as if he is trying to pry up one of the floorboards. When he sees Jenny and I he doesn't waste a moment and immediatley leaps out of a small square window about four feet above the ground. 'QUICK. AFTER HIM. GO AROUND THE SIDE.' Jenny screams as she launches herself into action. She disappears on the other side of the window as I stand, still stunned. I guess I'm doing this. I run back out of the room, through the long room and through the main entrance. I wrap around the side and see the man running straight at me. Thats when he makes his mistake, he stops to look for a way out. At that moment Jenny launches herself straight into him and he falls to the floor. On his arm I see something, a tattoo: the Chelsea Ace symbol with the word Strike Out written right under it. Jenny brings the guy in for walking in a police area and he remains totally silent. While she does that I do a little reasearch of my own. In the floorboard where the guy was looking I find a fat wad of cash. Nice. However, upon closer inspection I notice something, every bill in it is fake. Counterfeit. What were the aces up to? Is this what Nathan go them for?"
+	})
+
+	archives.addEventListener("click", function(){
+
+		text.innerText="I step into the Rose Main Reading Room in the New York Public Library. Places like this restore my faith in humanity. Coupl'a hundred people working silently in a gorgeous room filled with books. I walk up to the desk located in the back. Molly, an old friend from highschool smiles at me as she sees me. '_______ how have you been? Still a Private Investigator?' 'I find what I'm good at and stick to it. Gotta go search some stuff up? Give me the clearance for the Research room?' 'Since you asked so nicely.' She walks out from behind the desk, twirling a key chain around her fingers. She leads me to a large bronze door on one side of the room. 'All yours.' I nod my head and step inside. A couple of hours later of scrolling and reading later I found it. When I first saw it I thought I had fallen asleep and was dreaming. But no, I was awake. I almost let my excitement get a hold of me - I wanted to scream 'FUCK YES' - but I kept my composure, a small smile tugging at the corner of my lips. The symbol was in fact a gang symbol. The Chelsea Aces. I opened up a new tab and quickly typed in the gang name. Any new activity could be the key to finding out what Balboni had been up to. Why he had the pin. A New York Times Article dated less than a month ago is at the top of the page. 'Suspected Ace Member Sebastian Peláez-Snyder arrested for counterfeiting' An Ace member arrested recently? Looks like I'll be visiting the clink."
+	})
+
+
+	jenshot.addEventListener("click", function(){
+		henshot.style.backgroundImage="url(henry.png)"
+		henshot.style.border="3px solid whitesmoke"
+		apt.style.backgroundImage="url(apartmentdoor.jpg)"
+		apt.style.border="3px solid whitesmoke"
+	})
+
+	apt.addEventListener("click", function(){
+		archives.style.backgroundImage="url(archives.jpg)"
+		archives.style.border="3px solid whitesmoke"
+
+	})
+
+	archives.addEventListener("click", function(){
+		sebshot.style.backgroundImage="url(seb.png)"
+		sebshot.style.border="3px solid whitesmoke"
+
+	})
+
+	sebshot.addEventListener("click", function(){
+		warehouse.style.backgroundImage="url(warehouse.jpg)"
+		warehouse.style.border="3px solid whitesmoke"
+	})
+
+	jenny.addEventListener("click", function(){
+		jenny.style.border="5px solid greenyellow"
+		nathan.style.border="5px solid black"
+		molly.style.border="5px solid black"
+		henry.style.border="5px solid black"
+		sebastian.style.border="5px solid black"
+		johnny.style.border="5px solid black"
+		 x = "jenny"
+	})
+
+	nathan.addEventListener("click", function(){
+		jenny.style.border="3px solid black"
+		nathan.style.border="5px solid greenyellow"
+		molly.style.border="5px solid black"
+		henry.style.border="5px solid black"
+		sebastian.style.border="5px solid black"
+		johnny.style.border="5px solid black"
+		 x = "nathan"
+	})
+
+	molly.addEventListener("click", function(){
+		jenny.style.border="3px solid black"
+		nathan.style.border="5px solid black"
+		molly.style.border="5px solid greenyellow"
+		henry.style.border="5px solid black"
+		sebastian.style.border="5px solid black"
+		johnny.style.border="5px solid black"
+		 x = "molly"
+	})
+
+	sebastian.addEventListener("click", function(){
+		jenny.style.border="3px solid black"
+		nathan.style.border="5px solid black"
+		molly.style.border="5px solid black"
+		henry.style.border="5px solid black"
+		sebastian.style.border="5px solid greenyellow"
+		johnny.style.border="5px solid black"
+		 x = "sebastian"
+	})
+
+	henry.addEventListener("click", function(){
+		jenny.style.border="3px solid black"
+		nathan.style.border="5px solid black"
+		molly.style.border="5px solid black"
+		henry.style.border="5px solid greenyellow"
+		sebastian.style.border="5px solid black"
+		johnny.style.border="5px solid black"
+		 x = "henry"
+	})
+
+	johnny.addEventListener("click", function(){
+		jenny.style.border="3px solid black"
+		nathan.style.border="5px solid black"
+		molly.style.border="5px solid black"
+		henry.style.border="5px solid black"
+		sebastian.style.border="5px solid black"
+		johnny.style.border="5px solid greenyellow"
+		 x = "johnny"
+	})
+
+	button.addEventListener("click", function(){
+		if (x=="jenny") {alert("No. Try again.")}
+		if (x=="nathan") {alert("It wasn't a suicide silly, try again.")}
+		if (x=="molly") {alert("Now where did you get that?")}
+		if (x=="sebastian") {alert("You could have had a worse guess but not correct.")}
+		if (x=="henry") {alert("Hello? No.")}
+		if (x=="johnny") {
+			tracker.style.backgroundImage="url(johnny.png)"
+			text.innerText=""
+			y = "yes"
+			if (y=="yes"){alert("Ding Ding Ding!!! Congrats!") }
+		}
+		
+	})
+
+
+
+</script>
+
+</body>
+</html>

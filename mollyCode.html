@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		div{
+			border:1px solid black;
+			width:100px;
+			height:100px;
+		}
+
+		#two{
+			background-color:black;
+			background-size:contain;
+		}
+
+		.button{
+			width:50px;
+			height:100px;
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="one"></div>
+
+	<div id='two'></div>
+
+	<div class="button" id="a"></div>
+
+		<div class="button" id="b"></div>
+
+	<div class="button" id="c"></div>
+
+	<div class="button" id="d"></div>
+
+	<script type="text/javascript">
+
+		one.addEventListener("click", function(){
+			two.style.backgroundImage="url(https://smb.ibsrv.net/imageresizer/image/blog_images/1200x1200/58374/75587/0000655001540319655.jpg)"
+		})
+		
+		var ish;
+
+		a.addEventListener("click", function(){
+			a.style.border="2px solid magenta"
+			ish = true;
+
+
+		})
+
+		b.addEventListener("click", function(){
+			if (ish==true){
+				alert("mazol tov!")
+			}
+		})
+
+	</script>
+
+</body>
+</html>

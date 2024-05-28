@@ -10,39 +10,47 @@
 		#background{
 			background-color:gainsboro;
 			width:100%;
-			height:765px;
+			height:800px;
 		}
-
-
-
-		#cover{
+		.text{
+			font-family: 'DM Serif Display', serif;
+			text-decoration: none;
+			color:white;
+			font-size:30px;
+			left:50%;
 			position:relative;
-			top:12.5%;
-			left:35%;
-			width:385px;
-			height:577px;
-			background-image:url(cover.png);
-			background-size:contain;
+			display:inline-block;
+			top:90px;
+
 		}
 
-		#spine{
-			position:absolute;
-			top:13%;
-			left:35%;
-			width:10px;
-			height:577px;
-			background-size:contain;
-			background-image:url(spine.png);
+		#title{
+			font-size:80px;
+			font-family: 'DM Serif Display', serif;
+			text-decoration: none;
+			color:white;
+			left:16%;
+			position:relative;
+			top:10px;
 		}
 
-		#arrow{
-			background-image:url(arrow.png);
+		#contain{
+			width:300px;
+			top:30px;
+		}
+
+		#ball{
+			background-image:url(https://i.pinimg.com/originals/c9/c8/76/c9c8767c1bf2484235a056d84314eba5.gif);
+			height:600px;
+			width:600px;
 			background-size:contain;
-			width:89px;
-			height:50px;
-			left:70%;
-			top:50%;
+
+			background-repeat:no-repeat;
+			 clip-path: inset(125px 10px 5px 5px);
+			left:40%;
+			top:60px;
 			position:absolute;
+
 		}
 
 	</style>
@@ -50,9 +58,22 @@
 <body>
 
 	<div id="background">
-			<div id="cover"></div>
-			<div id="spine"></div>
-		<a id="arrow" href="projectspone.html"></a>
+		<div id="title">Welcome to the Projects Page</div>
+		<div id="contain">
+		<a class="text" id="animation" href="animation.html">Animation 🐰</a>
+		<a class="text" id="animation" href="eventlistener.html">Event Listener 🎧</a>
+		<a class="text" id="animation" href="bloom.html">Bloom 🫧</a>
+		<a class="text" id="animation" href="oyster.html">Oyster Project 🦪</a>
+		<a class="text" id="animation" href="jumpscare.html">Jumpscare 🕸️</a>
+		<a class="text" id="animation" href="jenny.html">Array ⚽️</a>
+		<a class="text" id="animation" href="random.html"> Array p2 🪩</a>
+		<a class="text" id="animation" href="kissthejenny.html"> Kiss the Jenny 🩶</a>
+		<a class="text" id="animation" href="car.html"> Moving Car ⚙️</a>
+		<a class="text" id="animation" href="holidaycard.html"> Holiday Card 🐩</a>
+		<a class="text" id="animation" href="color.html"> Color Clicker 📁</a>
+		<a class="text" id="animation" href="finalproject.html"> FINAL PROJECT! 👽</a>
+	</div>
+	<div id="ball"></div>
 	</div>
 	
 	
